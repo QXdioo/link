@@ -1,0 +1,188 @@
+    <style>
+        body {
+            background: #232739;
+            font-family: Arial, sans-serif;
+            
+        }
+        header {
+            color: #fff;
+            padding: 13px;
+            text-align: center;
+            background-image: linear-gradient(45deg,
+            #181c43, #334b93, #6c99c8, #242582, #07a0b3);
+            background-size: 300% 300%;
+            animation: gradient 13s ease infinite;
+            height: ;
+             width: 97,5%;
+  }
+
+  @keyframes gradient {
+    5% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+        }
+        
+    header img {
+            height: 90px;
+    }
+    .bouncing-image {
+            animation: bouncing 1.5s ease-in-out infinite;
+            width: 100px;
+            height: 100px;
+        }
+
+     @keyframes bouncing {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+ 
+    header p {
+      color: #fff;
+      font-family: cursive;
+      font-size: 30px;
+    }
+   header button {
+         height: 23px;
+         color: #fff;
+         background-color: rgba(255, 255, 251, 0.3);
+         backdrop-filter: blur(10px);
+         border: 3px solid transparent;
+         border-radius: 3px;
+         padding: 1px;
+         text-align: center;
+         font-size: 13px;
+       }
+    header button:hover{
+      color: #000;
+      background-color: #0ad2e6;
+    }
+        nav {
+            background-color: #2c2a2a;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+            
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            
+        }
+        nav i {
+          font-size: 26px;
+        }
+        nav li a:hover {
+          color: yellow;
+        }
+        main {
+            padding: 20px;
+            background-image: linear-gradient(45deg, #252214, #8d8b85, #3d3816);
+            background-size: 300% 300%;
+            animation: gradient 25s ease infinite;
+            height: 300px;
+            width: 97,5%;
+  }
+
+  @keyframes gradient {
+    5% {
+      background-position: 5% 70%;
+    }
+    50% {
+      background-position: 100% 40%;
+    }
+    100% {
+      background-position: 10% 50%;
+    }
+        }
+        
+        main h2 {
+            color: #fff;
+            margin: 0 0 10px;
+            font-family: Sans-Serif;
+            text-align: center;
+        }
+        main h3 {
+          color: #ffffff;
+          text-align: center;
+          font-size: 30px;
+        }
+        main ul {
+          color: #fff;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        main p {
+          color: #fff;
+        }
+        main li {
+          color: #fff;
+            margin-bottom: 10px;
+        }
+        main .box {
+         background-color: rgba(255, 255, 251, 0.3);
+         backdrop-filter: blur(10px);
+         border: 3px solid transparent;
+         border-radius: 3px;
+         padding: 1px;
+        }
+        main .box a i {
+          font-size: 30px;
+          color: #a0c8f7;
+        }
+  
+        .like-dislike .like, .like-dislike .dislike {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.like-dislike .like:hover, .like-dislike .dislike:hover {
+  color: #2764f3;
+  background-color: #e0e0e0;
+}
+
+.like-dislike .like.disabled, .like-dislike .dislike.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.like-dislike .like.disabled:hover, .like-dislike .dislike.disabled:hover {
+  color: #f3a427;
+  background-color: #ddd;
+}
+        
+ footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            position: bottom;
+        }
+    

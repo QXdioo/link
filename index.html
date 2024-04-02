@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qxdio</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha384-YW Bernb9q/17Xh168/t8L3R8kxxe4qdGxjKmC3gTcJE/W5WMD8QiH/sW5L6gf5q/swM" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="bouncing-image" alt="Company Logo">
+        <p>WELCOME TO QXDIO</p>
+   
+         <button class="button" onclick="changePage()">Selengkapnya</button>
+     
+    </header>
+    <nav>
+        <ul>
+            |
+            <li><a
+            href="https://www.instagram.com/qxdio_?igsh=YzA1aGR3cWNyNWx3">
+              <i class='bx bxl-instagram'> </i> Instagram
+            </a></li> |
+            <li><a href="https://www.tiktok.com/@qxdio_?_t=8kwu8Q4WVR2&_r=1">
+              <i class='bx bxl-tiktok'> </i> TikTok
+              </a></li> |
+              <li><a href="https://youtube.com/@qxdio?si=MRiVxdXVgKT7jyEg">
+              <i class='bx bxl-youtube'> </i> YouTube
+              </a></li> |
+              <li><a href="https://www.facebook.com/profile.php?id=61550233508679">
+              <i class='bx bxl-facebook'> </i> Facebook
+            </a></li> |
+              <li><a href="https://mobile.capcutshare.com/s/Zs86qWo4h/">
+              <i class='bx bxs-movie-play'></i> CapCut
+              </a></li> |
+  
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h3>QX Dio</h3>    
+            </section>
+            <br>
+        <div class="box">
+            <h2>Terima kasih Sudah datang🥰</h2>
+            <p>
+   Hai kamu bisa chek sosmedku di ikon diatas 
+            </p>
+            <p>jangan lupa follow <i class='bx bxs-user-pin' ></i>  like <i class='bx bxs-like'></i><i class='bx bxs-heart' ></i>
+            & Coment <i class='bx bxs-comment-dots' ></i>
+            </p>
+   <p></p>
+             <a href="https://drive.google.com/drive/folders/1W2yvWccuJWKIu447Ehc3MoIKTsQEBd-A">
+            <i class='bx bxs-folder-open'>?</i>
+          </a>
+          <br>
+             <a href="WindowsQX.html">
+           <i class='bx bxl-windows'></i>
+          </a>
+        </div>
+
+  </main>
+
+  <div class="like-dislike">
+  <button class="like" data-id="1"><i class='bx bxs-like'></i></button>
+  <span class="likes-count">0</span>
+  <button class="dislike" data-id="1"><i class='bx bxs-dislike'></i></button>
+  <span class="dislikes-count">0</span> 
+</div>
+        <footer>
+            <p>© 2024</p>
+        </footer>
+        
+        
+        
+    <script>
+      function changePage() { window.location.href ="update.html";}
+      
+  const likeButtons = document.querySelectorAll('.like-dislike .like');
+const dislikeButtons = document.querySelectorAll('.like-dislike .dislike');
+const likesCount = document.querySelectorAll('.like-dislike .likes-count');
+const dislikesCount = document.querySelectorAll('.like-dislike .dislikes-count');
+
+likeButtons.forEach((likeButton) => {
+  likeButton.addEventListener('click', () => {
+    likeButton.classList.add('disabled');
+    dislikeButton.classList.remove('disabled');
+    updateCounts(likeButton, likesCount);
+  });
+});
+
+dislikeButtons.forEach((dislikeButton) => {
+  dislikeButton.addEventListener('click', () => {
+    dislikeButton.classList.add('disabled');
+    likeButton.classList.remove('disabled');
+    updateCounts(dislikeButton, dislikesCount);
+  });
+});
+
+function updateCounts(button, countElement) {
+  const id = button.dataset.id;
+  const count = parseInt(countElement.textContent);
+  countElement.textContent = count + 1;
+  // Simpan pilihan user ke database atau API
+}
+    </script>
+  </body>
+  </html>
